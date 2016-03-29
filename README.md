@@ -1,11 +1,14 @@
-?????????????????? Project [update 29/3/2559]
+Setup Projectss [update 29/3/2559]
 ===============================
 Step setup for windows 7
 1. Download and install composer (URL : https://getcomposer.org/download/)
+
 2. Open cmd.exe and "cd" go to context root path
+
 3. Enter command
     3.1 composer global require "fxp/composer-asset-plugin:~1.1.1"
     3.2 composer create-project yiisoft/yii2-app-advanced advanced
+	
 4. Update config for PrettyUrl
     project/fontend/config/main.php
     project/backend/config/main.php
