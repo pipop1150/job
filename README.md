@@ -1,4 +1,4 @@
-Setup Project [update 29/3/2559] test
+Setup Project [update 29/3/2559]
 ===============================
 Step setup for windows 7
 1. Download and install composer (URL : https://getcomposer.org/download/)
