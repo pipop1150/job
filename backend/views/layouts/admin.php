@@ -12,6 +12,7 @@ use yii\helpers\BaseUrl;
     <!-- CSS -->
     <link href="<?=(new BaseUrl())->base()?>/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="<?=(new BaseUrl())->base()?>/assets/jasny/css/jasny-bootstrap.min.css" rel="stylesheet" />
+    <link href="<?=(new BaseUrl())->base()?>/assets/css/custom.css" rel="stylesheet" />
 
     <!-- JS -->
     <script src="<?=(new BaseUrl())->base()?>/assets/js/jquery.js"></script>
