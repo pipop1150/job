@@ -1,4 +1,8 @@
 <?php
+use yii\widgets\ActiveForm;
+?>
+
+<?php
   $this->title = "Index Page";
   $topics = array(
     "1 หน้ากระดาษ +สกอร์รวม",
@@ -121,7 +125,15 @@
                     </div>
                     <div class="col-xs-6">
                       <div class="fileinput fileinput-new" data-provides="fileinput" style="margin: 0px !important;">
-                        <span class="btn btn-success btn-file"><span class="fileinput-new">Excel</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+                        <span class="btn btn-success btn-file"><span class="fileinput-new">Excel</span><span class="fileinput-exists">Change</span>
+                        <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]) ?>
+
+                            <?= $form->field($model, 'imageFile')->fileInput() ?>
+
+                            <button>Submit</button>
+
+                        <?php ActiveForm::end() ?>
+                        </span>
                         <span class="fileinput-filename"></span>
                         <a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">&times;</a>
                       </div>
@@ -137,3 +149,13 @@
 
     </div>
   </div>
+
+
+
+  <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]) ?>
+
+      <?= $form->field($model, 'imageFile')->fileInput() ?>
+
+      <button>Submit</button>
+
+  <?php ActiveForm::end() ?>
